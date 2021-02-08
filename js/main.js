@@ -26,7 +26,7 @@ new Vue({
       });
 
       //ciclo arrayGenre e creo un oggetto che pusho in options
-      for (let i = 0; i < arrayGenre.length; i++ ) {
+      for (let i = 0; i < arrayGenre.length; i++) {
         self.options.push({
           text: arrayGenre[i],
           value: arrayGenre[i]
@@ -50,7 +50,7 @@ new Vue({
         this.albumToRender = this.album
       } else {
         this.albumToRender = filteredAlbum;
-      }
+      };
     }
   }//end methods
 })//end vue app
