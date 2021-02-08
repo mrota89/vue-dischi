@@ -20,10 +20,7 @@
               <select v-model="selected" @click="selectFunction">
                 <option disabled value="">Scegli una categoria</option>
                 <option>Tutti i generi</option>
-                <option>Rock</option>
-                <option>Metal</option>
-                <option>Jazz</option>
-                <option>Pop</option>
+                <option v-for="option in options" :value="option.value">{{option.text}}</option>
               </select>
             </div>
           </div>
